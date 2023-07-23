@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root{
+    @apply bg-neutral-900
+}
+
+html{
+    scroll-snap-type: y mandatory;
+
+}
+
+.container{
+    max-width: 1000px !important;
+}
+
+section{
+    min-height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    @apply pt-8 pb-36 md:pb-0 md:pt-0
+}
+
+
+#home{
+    ul{
+        li{
+            @apply mr-4 md:mr-2 p-1 bg-neutral-950;
+            svg{
+                @apply w-6 h-6 md:w-4 md:h-4 fill-primary;
+            }
+
+            &:hover{
+                @apply bg-primary;
+                svg{
+                    @apply fill-neutral-950;
+                }
+            }
+        }
+    }
+}
+
+#projects{
+    .project-container{
+        img{
+            @apply hover:scale-110 scale-100 transition-transform
+        }
+    }
+}
+
+
+.pulse-waves{
+    animation: pulse-waves infinite 1s !important;
+}
+
+.sidebar{
+    width: 20rem;
+    max-width: 100vw;
+
+    .sidebar-header{
+        transition: all .3s;
+    }
+
+
+    @apply fixed bg-neutral-950 h-full flex text-primary items-center overflow-hidden max-w-xs lg:max-w-full top-0 left-0 z-40;
+
+    li{
+        @apply mt-2 text-primary hover:text-neutral-950 hover:bg-primary flex items-center p-1 whitespace-nowrap;
+        .icon{
+            @apply w-4 h-4 flex-shrink-0 mr-4 text-neutral-950;
+            svg{
+                @apply fill-primary
+            }
+            
+        }
+
+        &:hover{
+            .icon svg{
+                @apply fill-neutral-950
+            }
+        }
+    }
+
+    &.collapsed{
+        @apply lg:max-w-xxs max-w-0;
+    }
+
+    transition: all .3s;
+}
+
+.hamburger{
+    @apply fixed left-9 top-9 w-4 h-4 cursor-pointer z-50;
+    svg {
+        @apply fill-primary;
+    }
+    svg path{
+        @apply stroke-primary;
+    }
+    &::before{
+        content: '';
+        @apply absolute -top-4 -left-4 w-12 h-12 bg-neutral-950 -z-10;
+
+    }
+}
+
+@keyframes pulse-waves {
+    0% {
+      box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 70%, transparent);;
+    }
+  
+    70% {
+      box-shadow: 0 0 0 10px color-mix(in srgb, currentColor 0%, transparent);;
+    }
+  
+    100% {
+      box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 0%, transparent);;
+    }
+  }
+
+  ::-moz-selection { /* Code for Firefox */
+    // color: white;
+    background: white;
+  }
+  
+  ::selection {
+    // color: red;
+    background: rgba(white, 0.1);
+  }

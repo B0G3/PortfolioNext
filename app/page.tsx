@@ -1,113 +1,207 @@
 import Image from 'next/image'
+import Portrait from './components/home/portrait';
+import { ExperienceTimeline } from './components/home/experienceTimeline';
+import { Project } from './components/home/project';
+import { Ref, useRef } from 'react';
+import ProjectShowcase from './components/home/projectShowcase';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+    <section id="home" className="flex">
+      <div className="mx-auto container flex items-center justify-center">
+        <div className="flex overflow-hidden flex-col md:flex-row md:items-normal items-center">
+          <Portrait></Portrait>
+          <div className="flex flex-col content-center md:text-left text-center uppercase">
+            <h1 className="text-4xl mt-4 md:mt-0">Marcin Kostrzemski</h1>
+            <h2 className="text-2xl p-1 bg-neutral-950 w-fit m-auto md:m-0">Software Developer</h2>
+            <p className="text-muted max-w-md mt-0 md:mt-2 p-4 md:p-0">Praesent semper ante in tempus tempor. Duis dignissim sem sed sem venenatis, sit amet sodales nunc malesuada. </p>
+            <ul className="flex md:mt-2 justify-center md:justify-normal">
+              <li>
+                <a>
+                  <svg enableBackground="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="11.13" y="166.96" width="111.3" height="345.04"/>
+                    <polygon points="100.17 33.391 100.17 0 33.391 0 33.391 33.391 0 33.391 0 100.17 33.391 100.17 33.391 133.56 100.17 133.56 100.17 100.17 133.56 100.17 133.56 33.391"/>
+                    <polygon points="478.61 233.74 478.61 200.35 445.22 200.35 445.22 166.96 289.39 166.96 289.39 200.35 256 200.35 256 166.96 155.83 166.96 155.83 512 267.13 512 267.13 300.52 300.52 300.52 300.52 267.13 367.3 267.13 367.3 300.52 400.7 300.52 400.7 512 512 512 512 233.74"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <svg enableBackground="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <polygon points="411.83 122.44 411.83 0 233.74 0 233.74 33.391 200.35 33.391 200.35 66.783 166.96 66.783 166.96 166.96 100.17 166.96 100.17 289.39 166.96 289.39 166.96 512 300.52 512 300.52 289.39 367.3 289.39 367.3 166.96 300.52 166.96 300.52 122.44"/>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <svg enableBackground="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                      <polygon points="0 61.217 0 116.87 55.652 116.87 55.652 150.26 100.17 150.26 100.17 183.65 144.7 183.65 144.7 217.04 189.22 217.04 189.22 250.44 233.74 250.44 233.74 283.83 278.26 283.83 278.26 250.44 322.78 250.44 322.78 217.04 367.3 217.04 367.3 183.65 411.83 183.65 411.83 150.26 456.35 150.26 456.35 116.87 512 116.87 512 61.217"/>
+                      <polygon points="456.35 150.26 456.35 183.65 411.83 183.65 411.83 217.04 367.3 217.04 367.3 250.44 322.78 250.44 322.78 283.83 278.26 283.83 278.26 317.22 233.74 317.22 233.74 283.83 189.22 283.83 189.22 250.44 144.7 250.44 144.7 217.04 100.17 217.04 100.17 183.65 55.652 183.65 55.652 150.26 0 150.26 0 450.78 512 450.78 512 150.26"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+    </section>
+    <section id="about" className="flex">
+      <div className="mx-auto container flex items-center justify-center px-8">
+        <div className="w-full">
+          <span className="bg-neutral-950 p-1 w-fit text-2xl block">About</span>
+          <h2 className="text-4xl mt-2">About me</h2>
+          <div className="grid gap-0 sm:gap-8 grid-cols-12">
+            <div className="col-span-12 sm:col-span-7 lg:col-span-9"> 
+              <p className="text-muted text-justify mt-2">
+                Hey! My name is Marcin and I come from Poland, however language is no barrier to me.
+                I'm a huge computer science enthusiast. When it comes to programming my first attempts to appear
+                on the market began in late 2017. Back in the days I used to create and monetize mods for a popular game
+                called Garry's Mod. The results were great. I had enough money to continue my studies without actually
+                working 9-5 job. I knew it's not going to last forever so after some time I started to drift a bit from the "gamedev" topic.
+                Webdev industry is something that definitely caught my eye. In 10.2021 I got my first job as a software developer.
+              </p>
+              <p className="text-muted text-justify mt-4">
+                I label myself as a fullstack developer. I enjoy doing both front and back end of applications. Programming is definitely a hobby of mine.
+                I still develop some side projects from time to time. I feel like I'm very versatile and I like learning new technologies - right now I'm trying to get a good grasp of React
+                (Vue used to be my main front framework for a long time).
+              </p>
+            </div>
+            <div className="col-span-12 sm:col-span-5 lg:col-span-3 text-2xl overflow-clip mt-2 lg:mt-0">
+                <ul>
+                  <li className="flex justify-between">
+                    <div className="">Name:</div>
+                    <div className="text-muted">Marcin</div>
+                  </li>
+                  <li className="flex justify-between">
+                    <div className="">Age:</div>
+                    <div className="text-muted">23</div>
+                  </li>
+                  <li className="flex justify-between">
+                    <div className="">Nationality:</div>
+                    <div className="text-muted">Poland</div>
+                  </li>
+                  <li className="flex justify-between">
+                    <div className="">Degree:</div>
+                    <div className="text-muted">Engineer</div>
+                  </li>
+                  <li className="flex justify-between">
+                    <div className="">Phone:</div>
+                    <div className="text-muted">+48 721139254</div>
+                  </li>
+                  <li className="flex justify-between">
+                    <div className="">Open to work:</div>
+                    <div className="text-muted">True</div>
+                  </li>
+                  <li>
+                    <button className="group bg-neutral-950 text-primary w-full mt-2 uppercase hover:bg-primary hover:text-neutral-950 flex items-center justify-center">
+                      <svg className="w-4 h-4 mr-2 fill-primary group-hover:fill-neutral-950" enableBackground="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                          <path d="m512 66.785h-33.392v-33.394h-33.391v-33.391h-445.21v512h512v-445.22h-2e-3zm-133.56 411.82h-244.87v-244.87h244.87v244.87zm1e-3 -378.43h-244.87v-66.782h244.87v66.782z"/>
+                      </svg>
+                      Download CV</button>
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <hr className="my-8 border-muted"></hr>
+          <div className="grid grid-cols-12 gap-0 sm:gap-8">
+            <div className="col-span-12 sm:col-span-8">
+              <div className="bg-neutral-950 p-1 w-fit text-2xl">Knowledge</div>
+              <ul className="mt-2">
+                <li>
+                  <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(169.33 -118.75)">
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    </g>
+                  </svg>
+                  <span>FRONTEND: </span>
+                  <span className="text-muted">JS, Vue, JQuery, React, Bootstrap, Tailwind, SAAS, Vite, Webpack</span>
+                </li>
+                <li>
+                  <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(169.33 -118.75)">
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    </g>
+                  </svg>
+                  <span>BACKEND: </span>
+                  <span className="text-muted">PHP, JS, Laravel, NextJS, NodeJS, MySQL, MongoDB </span>
+                </li>
+                <li>
+                  <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(169.33 -118.75)">
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    </g>
+                  </svg>
+                  <span>OTHER: </span>
+                  <span className="text-muted">Rest, Git, Lua, 3D</span>
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-12 sm:col-span-4 mt-2 sm:mt-0">
+              <div className="bg-neutral-950 p-1 w-fit text-2xl">Interests</div>
+              <ul className="mt-2">
+                <li>
+                  <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(169.33 -118.75)">
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    </g>
+                  </svg>
+                  <span className="text-muted">Programming</span>
+                </li>
+                <li>
+                  <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(169.33 -118.75)">
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    </g>
+                  </svg>
+                  <span className="text-muted">Reverse engineering</span>
+                </li>
+                <li>
+                  <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
+                    <g transform="translate(169.33 -118.75)">
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    </g>
+                  </svg>
+                  <span className="text-muted">Gym</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+    </section>
+    <section id="experience" className="flex">
+    <div className="mx-auto container flex items-center justify-center px-8">
+        <div className="w-full">
+          <span className="bg-neutral-950 p-1 w-fit text-2xl block">Experience</span>
+          <h2 className="text-4xl mt-2">My experience</h2>
+          <ExperienceTimeline></ExperienceTimeline>
+        </div>
       </div>
-    </main>
+    </section>
+    <section id="projects" className="flex">
+    <div className="mx-auto container flex items-center justify-center px-8">
+        <div className="w-full">
+          <span className="bg-neutral-950 p-1 w-fit text-2xl">Projects</span>
+          <h2 className="text-4xl mt-2">My projects</h2>
+          <div className="mt-4">
+            {/* <div className="col-span-12 sm:col-span-6 lg:col-span-4"> */}
+            <ProjectShowcase/>
+              {/* <Project 
+                windowController={windowController}
+                title={'Sports platform'} 
+                subtitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'} 
+                stack={'Laravel, Vue, Inertia'}
+                icons={{
+                  // 'live': 'https://sportigio.com/',
+                  
+                }}
+              ></Project> */}
+            {/* </div> */}
+          </div>
+        </div>
+      </div>
+    </section>
+    </>
   )
 }
