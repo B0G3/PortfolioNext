@@ -1,9 +1,37 @@
 
 "use client"
-import { useState } from 'react'
-// import './sidebar.scss'
+import { useEffect, useState } from 'react'
 export default function Sidebar() {
     const [collapsed, setCollapsed] = useState(true);
+    const [section, setSection] = useState("");
+
+    const scrollTo = (section : string) => {
+        const element = document.getElementById(section);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
+    useEffect(() => {
+        const handleScroll = (event : Event) => {
+
+            const sections = Array.from(document.querySelectorAll('section'));
+            let current = "home"
+
+            sections.forEach(e => {
+                if(window.scrollY + window.innerHeight/2 >= e.offsetTop) { current = e.id; };
+               
+            })
+            setSection(current);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
     return (
         <>
         <div className={"sidebar" + (collapsed?" collapsed":"")}>
@@ -17,15 +45,15 @@ export default function Sidebar() {
                     </div>
                 </div>
                 <ul className="mt-4 overflow-hidden uppercase">
-                    <li>
-                        <div className="icon">
+                    <li className={"cursor-pointer" + (section==='home' ? ' active' : '')} onClick={()=>scrollTo('home')}>
+                        <div className="icon cursor-pointer">
                             <svg enableBackground="new 0 0 512 512" version="1.1" viewBox="0 0 512 512"  xmlns="http://www.w3.org/2000/svg">
                                     <polygon points="478.61 233.74 478.61 200.35 445.22 200.35 445.22 166.96 411.83 166.96 411.83 133.56 378.44 133.56 378.44 100.17 345.04 100.17 345.04 66.783 311.65 66.783 311.65 33.391 278.26 33.391 278.26 0 233.74 0 233.74 33.391 200.35 33.391 200.35 66.783 166.96 66.783 166.96 100.17 133.56 100.17 133.56 133.56 100.17 133.56 100.17 166.96 66.783 166.96 66.783 200.35 33.391 200.35 33.391 233.74 0 233.74 0 512 178.09 512 178.09 300.52 333.91 300.52 333.91 512 512 512 512 233.74"/>
                             </svg>
                         </div>
                         Home
                     </li>
-                    <li>
+                    <li className={"cursor-pointer"  + (section==='about' ? ' active' : '')} onClick={()=>scrollTo('about')}>
                         <div className="icon">
                             <svg enableBackground="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m0 61.217v389.56h512v-389.56h-512zm256 222.61h-44.522v44.522h44.522v55.652h-178.09v-55.652h44.522v-44.522h-44.522v-122.44h33.391v-33.391h111.3v33.391h33.392v122.44zm178.09 77.913h-133.56v-33.391h133.56v33.391zm0-89.043h-133.56v-33.391h133.56v33.391zm0-89.044h-133.56v-33.391h133.56v33.391z"/>
@@ -34,7 +62,7 @@ export default function Sidebar() {
                         </div>
                         About me
                     </li>
-                    <li>
+                    <li className={"cursor-pointer"  + (section==='experience' ? ' active' : '')} onClick={()=>scrollTo('experience')}>
                         <div className="icon">
                             <svg enableBackground="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">	
                                 <polygon points="512 166.96 512 166.96 478.61 166.96 378.43 166.96 378.43 133.57 345.04 133.57 345.04 89.045 311.65 89.045 311.65 33.393 278.26 33.393 278.26 2e-3 233.74 2e-3 233.74 33.393 200.35 33.393 200.35 89.045 166.96 89.045 166.96 133.57 133.56 133.57 133.56 166.96 33.391 166.96 33.391 166.96 0 166.96 0 256 3e-3 256 33.391 256 33.391 289.39 66.782 289.39 66.782 478.61 66.782 489.74 66.782 512 155.82 512 155.82 489.74 155.82 478.61 211.48 478.61 211.48 445.22 211.48 445.22 300.52 445.22 300.52 445.22 300.52 478.61 356.17 478.61 356.17 512 445.22 512 445.22 489.74 445.22 478.61 445.22 289.39 478.61 289.39 478.61 256 512 256 512 166.96"/>
@@ -42,7 +70,7 @@ export default function Sidebar() {
                         </div>
                         Experience
                     </li>
-                    <li>
+                    <li className={"cursor-pointer"  + (section==='projects' ? ' active' : '')} onClick={()=>scrollTo('projects')}>
                         <div className="icon">
                             <svg enableBackground="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                     <path d="m478.61 111.31v-33.402h-178.09v66.783h111.3v33.391h-144.7v-100.17h-33.391v-33.391h-200.35v33.396h-33.391v155.83h33.391v122.43h33.386v111.32h445.22v-0.011h7e-3v-356.16h-33.391zm0 244.86h-33.391v-89.043h-33.391v-89.042h33.391v89.042h33.391v89.043z"/>

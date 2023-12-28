@@ -2,8 +2,8 @@
 import { useEffect, useRef, useState } from "react"
 
 export default function Portrait(){
-    const [xdirection, setxDirection] = useState(true); // 0 - left 1 - right
-    const [ydirection, setyDirection] = useState(true); // 0 - bottom 1 - top
+    const [xdirection, setxDirection] = useState<boolean>(true); // 0 - left 1 - right
+    const [ydirection, setyDirection] = useState<boolean>(true); // 0 - bottom 1 - top
     const svgRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {

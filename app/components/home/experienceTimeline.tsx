@@ -3,12 +3,12 @@ export function ExperienceTimeline() {
         "gmod": {
             "date": "12.2017",
             "title": "Gmodstore",
-            "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus metus dolor, interdum ac blandit nec, bibendum id ligula. Mauris tempus vestibulum mauris in convallis",
+            "description": "In December 2017, I started making paid mods and scripts for Garry's Mod. While doing that, I got better at complex programming and the basics of 3D graphics. To this day, my solutions remain in active use by numerous server owners.",
         },
         "appworks": {
             "date": "10.2021",
             "title": "AppWorks",
-            "description": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus metus dolor, interdum ac blandit nec, bibendum id ligula. Mauris tempus vestibulum mauris in convallis",
+            "description": "During my time at AppWorks, I gained valuable knowledge and honed my web development skills. Over two years, I actively participated in numerous projects, often as the lead developer.",
         },
     }
 

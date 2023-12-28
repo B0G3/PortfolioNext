@@ -1,13 +1,16 @@
-import Sidebar from './components/layout/sidebar'
 import './globals.css'
 import './globals.scss'
-import WavesContainer from './components/layout/wavesContainer.jsx'
+import Sidebar from './components/layout/sidebar'
+import Waves from './components/layout/waves'
 
 // const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Portfolio',
-  description: 'React portfolio',
+  title: `Portfolio - B0G3`,
+  description: `Marcin Kostrzemski aka B0G3 portfolio`, 
+  icons: {
+    icon: '/icon.png'
+  },
 }
 
 export default function RootLayout({
@@ -18,7 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <WavesContainer></WavesContainer>
+        <link rel="icon" href="/favicon.png" sizes="any" />
+        <Waves></Waves>
         <Sidebar></Sidebar>
         <div className='w-full h-full text-primary uppercase snap-container'>
           {children}
