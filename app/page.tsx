@@ -63,13 +63,13 @@ export default function Home() {
           <div className="grid gap-0 sm:gap-8 grid-cols-12">
             <div className="col-span-12 sm:col-span-7 lg:col-span-9"> 
               <p className="text-muted text-justify mt-2">
-                Hey! My name is Marcin, and I'm from Poland. However, language is no barrier for me. I'm a huge computer science enthusiast. When it comes to programming, my first attempts to enter the market began in late 2017. Back in the day, I used to create and monetize mods for a popular game called Garry's Mod. 
+                {`Hey! My name is Marcin, and I'm from Poland. However, language is no barrier for me. I'm a huge computer science enthusiast. When it comes to programming, my first attempts to enter the market began in late 2017. Back in the day, I used to create and monetize mods for a popular game called Garry's Mod. 
                 The results were great; I had enough money to continue my studies without working a 9-5 job. Knowing it wouldn't last forever, I eventually started to shift away from the "gamedev" topic. The web development industry is something that has caught my eye. 
-                In October 2021, I landed my first job as a software developer.
+                In October 2021, I landed my first job as a software developer.`}
               </p>
               <p className="text-muted text-justify mt-4">
-                I consider myself a full-stack developer, finding enjoyment in both the front and back end of applications. Programming is not just a profession but a hobby for me. I regularly work on side projects to further explore my interests. I see myself as versatile, always eager to learn and adapt to new technologies.
-                Recently, I've been diving deep into React, Typescript, and Three.js.
+                {`I consider myself a full-stack developer, finding enjoyment in both the front and back end of applications. Programming is not just a profession but a hobby for me. I regularly work on side projects to further explore my interests. I see myself as versatile, always eager to learn and adapt to new technologies.
+                Recently, I've been diving deep into React, Typescript, and Three.js.`}
               </p>
             </div>
             <div className="col-span-12 sm:col-span-5 lg:col-span-3 text-2xl overflow-clip mt-2 lg:mt-0">
@@ -116,7 +116,7 @@ export default function Home() {
                 <li>
                   <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(169.33 -118.75)">
-                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
                     </g>
                   </svg>
                   <span>FRONTEND: </span>
@@ -125,7 +125,7 @@ export default function Home() {
                 <li>
                   <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(169.33 -118.75)">
-                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
                     </g>
                   </svg>
                   <span>BACKEND: </span>
@@ -134,7 +134,7 @@ export default function Home() {
                 <li>
                   <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(169.33 -118.75)">
-                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
                     </g>
                   </svg>
                   <span>OTHER: </span>
@@ -148,7 +148,7 @@ export default function Home() {
                 <li>
                   <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(169.33 -118.75)">
-                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
                     </g>
                   </svg>
                   <span className="text-muted">Programming</span>
@@ -156,7 +156,7 @@ export default function Home() {
                 <li>
                   <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(169.33 -118.75)">
-                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
                     </g>
                   </svg>
                   <span className="text-muted">Game modding</span>
@@ -164,7 +164,7 @@ export default function Home() {
                 <li>
                   <svg className="w-3 h-3 -mt-1 fill-primary inline mr-2" viewBox="0 0 12.7 12.7" xmlns="http://www.w3.org/2000/svg">
                     <g transform="translate(169.33 -118.75)">
-                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" isolation="auto" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
+                    <path d="m-166.16 119.28v11.641h1.0588v-1.0588h1.0583v-1.0584h1.0588v-1.0578h1.0578v-1e-3h5.3e-4v-1.0563h-5.3e-4v-1e-3h5.3e-4v1e-3h1.0588v-1.0588h-1e-3v-5.3e-4h1e-3v5.3e-4h1.0563v-1.0583c-0.35256 5.2e-4 -0.70428-5.3e-4 -1.0563-5.3e-4v-1.0583h-1.0588v-1.0583h-1.0584v-1.0589h-1.0588v-1.0583h-1.0583v-1.0568z" solid-color="rgb(0,0,0)" font-feature-settings="normal" font-variant-alternates="normal" font-variant-caps="normal" font-variant-ligatures="normal" font-variant-numeric="normal" font-variant-position="normal" mix-blend-mode="normal" paintOrder="normal" shape-padding="0" text-decoration-color="rgb(0,0,0)" text-decoration-line="none" text-decoration-style="solid" text-indent="0" text-orientation="mixed" text-transform="none" white-space="normal"/>
                     </g>
                   </svg>
                   <span className="text-muted">Gym</span>
