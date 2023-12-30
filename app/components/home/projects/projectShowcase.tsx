@@ -25,8 +25,7 @@ const projectList : Array<ProjectInterface> = [
         stack: 'TS, React, NextJS, ThreeJS + Fiber, Tailwind',
         description: "This website - my personal portfolio. I just wanted to create a place where I could show off my skills and tell something about me. I used different technologies than usual - I wanted to learn something new and give myself a little challenge. \n This is, like, the nth version of my portfolio. I've got this little paranoia thing going on—I keep finding bits of the page I don't like and end up wanting to redo the whole thing.",
         icons: {
-            repo: 'd',
-            live: 'd'
+            repo: 'https://github.com/B0G3/PortfolioNext',
         },
         media: [
             '/portfolio/about.avif',
@@ -38,8 +37,6 @@ const projectList : Array<ProjectInterface> = [
         stack: 'Vue, JS, Laravel, PHP, MySQL, Tailwind',
         description: "An app designed to assist solar panel sales professionals in their work. The central concept revolves around a highly customizable calculator accessible through settings. This calculator serves to generate tailored offers for clients. There are multiple user types, different roles give access to different things. The tool also allows you to generate highly customizable PDF's.",
         icons: {
-            repo: 'd',
-            live: 'd'
         },
         media: [
             '/kpe/funding.avif',
@@ -50,10 +47,8 @@ const projectList : Array<ProjectInterface> = [
         featured: false,
         title: 'Hotel ERP',
         stack: 'Vue, JS, Laravel, PHP, MySQL, Tailwind',
-        description: "A larger scale CRM web app tailored for a local inn, comprising various modules, including a knowledge base, warehouse management, work time tracking, an administrator suite, and more. This project stands out as one of my proudest achievements.",
+        description: "A larger scale ERP web app tailored for a local inn, comprising various modules, including a knowledge base, warehouse management, work time tracking, an administrator suite, and more. This project stands out as one of my proudest achievements.",
         icons: {
-            repo: 'd',
-            live: 'd'
         },
         media: [
             '/harasowka/dashboard.avif',
@@ -66,7 +61,6 @@ const projectList : Array<ProjectInterface> = [
         description: "I actively contribute to the development of the Sportigio platform, handling both front-end and back-end tasks. Sportigio is an online platform designed to meet the diverse needs of the sports community, connecting leagues, clubs, fans, and businesses while facilitating the monetization of digital sports. One of my recent significant tasks involved integrating the Verestro API. This enhancement enables users to create virtual cards, deposit funds, and utilize them seamlessly.",
         icons: {
             live: 'https://sportigio.com/spaces-list',
-            repo: 'https://sportigio.com/spaces-list',
         },
         media: [
             '/sportigio/landing.avif',
@@ -124,6 +118,7 @@ const projectList : Array<ProjectInterface> = [
         stack: 'LUA, 3D',
         description: "To this day, I continue to maintain some of my Garry's Mod scripts. These scripts alter various aspects of the game, with a dominant focus on enhancing roleplay gamemodes. Among the most well-received creations are the Ballistic Shields mod, the Need for Speed port, and a script facilitating cigarette production, to name a few. This was the first step that got me into some kind of commercial coding. After all, they raised over $20,000.",
         icons: {
+            live: 'https://www.gmodstore.com/users/76561198015802521/addons'
         },
         media: [
             '/gmod/gmod.avif',
