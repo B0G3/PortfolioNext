@@ -43,7 +43,7 @@ export function Project({
                     <div className={"w-full aspect-video bg-primary cursor-pointer group relative border-2 border-neutral-950 hover:grayscale-0 relative" + (showcased?'':' grayscale')}>
                         {
                                 (media && media[0]) &&
-                                <Image src={media[0]} alt="me" fill 
+                                <Image src={'/PortfolioNext' + media[0]} alt="me" fill 
                                 sizes="100%"/>
                         }
                         <div onClick={()=> (showcased ? (setClosed()): (onClick ? onClick() : null) )} className={"absolute w-full h-full bg-neutral-950 bg-opacity-20 group-hover:flex flex justify-center items-center" + (showcased?'':' hidden')}>
@@ -102,7 +102,7 @@ export function Project({
                     <div onClick={()=> (showcased ? (setClosed()): (onClick ? onClick() : null) )} className={"w-full aspect-video bg-primary cursor-pointer group relative border-2 border-neutral-950 hover:grayscale-0" + (showcased?'':' grayscale')}>
                        {
                             (media && media[0]) &&
-                            <Image className="object-cover object-top" src={media[0]} alt="me" fill 
+                            <Image className="object-cover object-top" src={'/PortfolioNext' + media[0]} alt="me" fill 
                             sizes="100%"/>
                        }
                         <div className={"absolute w-full h-full bg-neutral-950 bg-opacity-20 group-hover:flex flex justify-center items-center" + (showcased?'':' hidden')}>
@@ -151,7 +151,7 @@ export function Project({
                          <div className="mx-auto h-36 sm:h-64 aspect-video bg-primary group relative border-2 border-neutral-950 relative mt-2">
                         {
                                 (media && media[0]) &&
-                                <Image className="object-cover object-top" src={media[0]} alt="me" fill 
+                                <Image className="object-cover object-top" src={'/PortfolioNext' + media[0]} alt="me" fill 
                                 sizes="100%"/>
                         }
                         {/* <div className="absolute w-full h-full bg-neutral-950 bg-opacity-20 hidden group-hover:flex flex justify-center items-center">
