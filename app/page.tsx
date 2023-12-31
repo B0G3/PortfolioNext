@@ -99,7 +99,7 @@ export default function Home() {
                     <div className="text-muted">Yup!</div>
                   </li> */}
                   <li>
-                    <a href="/cv.pdf" download="cv" className="group bg-neutral-950 text-primary w-full mt-2 uppercase hover:bg-primary hover:text-neutral-950 flex items-center justify-center">
+                    <a href="/PortfolioNext/cv.pdf" download="cv" className="group bg-neutral-950 text-primary w-full mt-2 uppercase hover:bg-primary hover:text-neutral-950 flex items-center justify-center">
                       <svg className="w-4 h-4 mr-2 fill-primary group-hover:fill-neutral-950" enableBackground="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                           <path d="m512 66.785h-33.392v-33.394h-33.391v-33.391h-445.21v512h512v-445.22h-2e-3zm-133.56 411.82h-244.87v-244.87h244.87v244.87zm1e-3 -378.43h-244.87v-66.782h244.87v66.782z"/>
                       </svg>
