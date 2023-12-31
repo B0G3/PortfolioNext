@@ -14,7 +14,22 @@ export const metadata = {
   title: `Portfolio - B0G3`,
   description: `Marcin Kostrzemski aka B0G3 portfolio`, 
   icons: {
-    icon: '/icon.png'
+    icon: '/PortfolioNext/icon.png'
+  },
+  openGraph: {
+    title: 'Portfolio - B0G3',
+    description: 'Marcin Kostrzemski aka B0G3 portfolio',
+    url: 'https://b0g3.github.io/PortfolioNext/',
+    siteName: 'Next.js',
+    images: [
+      {
+        url: 'https://b0g3.github.io/PortfolioNext/og.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
 }
 
