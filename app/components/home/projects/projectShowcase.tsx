@@ -39,7 +39,6 @@ const projectList : Array<ProjectInterface> = [
         icons: {
         },
         media: [
-            '/kpe/funding.avif',
             '/kpe/calculator.avif',
         ]
     },
@@ -97,7 +96,7 @@ const projectList : Array<ProjectInterface> = [
         icons: {
         },
         media: [
-            '/masssender/schemas.avif',
+            '/masssender/messages.avif',
         ]
     },
     {

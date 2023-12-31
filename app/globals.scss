@@ -1,12 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
-:root{
-    @apply bg-neutral-900
-}
-
 html{
     scroll-snap-type: y mandatory;
-
+    @apply bg-neutral-900
 }
 
 .container{

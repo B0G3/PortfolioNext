@@ -2,8 +2,13 @@ import './globals.css'
 import './globals.scss'
 import Sidebar from './components/layout/sidebar'
 import Waves from './components/layout/waves'
+import { VT323 } from 'next/font/google'
 
-// const inter = Inter({ subsets: ['latin'] })
+const vt323 = VT323({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap'
+})
 
 export const metadata = {
   title: `Portfolio - B0G3`,
@@ -19,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html className={vt323.className} lang="en">
       <body>
         <link rel="icon" href="/favicon.png" sizes="any" />
         <Waves></Waves>
