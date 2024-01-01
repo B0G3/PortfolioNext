@@ -63,7 +63,7 @@ export default function Home() {
           <div className="grid gap-0 sm:gap-8 grid-cols-12">
             <div className="col-span-12 sm:col-span-7 lg:col-span-9"> 
               <p className="text-muted text-justify mt-2">
-                {`Hey! My name is Marcin, and I'm from Poland. However, language is no barrier for me. I'm a huge computer science enthusiast. When it comes to programming, my first attempts to enter the market began in late 2017. Back in the day, I used to create and monetize mods for a popular game called Garry's Mod. 
+                {`Hey! My name is Marcin and I'm from Poland, however language is not a barrier for me. I'm a huge computer science enthusiast. When it comes to programming, my first attempts to enter the market began in late 2017. Back in the day, I used to create and monetize mods for a popular game called Garry's Mod. 
                 The results were great; I had enough money to continue my studies without working a 9-5 job. Knowing it wouldn't last forever, I eventually started to shift away from the "gamedev" topic. The web development industry is something that has caught my eye. 
                 In October 2021, I landed my first job as a software developer.`}
               </p>
