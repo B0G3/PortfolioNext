@@ -132,26 +132,26 @@ section{
 
 @keyframes pulse-waves {
     0% {
-      box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 70%, transparent);;
+      box-shadow: 0 0 0 0 rgba(#efefef, 0.7);
     }
   
     70% {
-      box-shadow: 0 0 0 10px color-mix(in srgb, currentColor 0%, transparent);;
+      box-shadow: 0 0 0 10px rgba(#efefef, 0);
     }
   
     100% {
-      box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 0%, transparent);;
+      box-shadow: 0 0 0 0 rgba(#efefef, 0);
     }
   }
 
   ::-moz-selection { /* Code for Firefox */
     // color: white;
-    background: white;
+    background: #efefef;
   }
   
   ::selection {
     // color: red;
-    background: rgba(white, 0.1);
+    background: rgba(#efefef, 0.1);
   }
 
   @keyframes blink {
