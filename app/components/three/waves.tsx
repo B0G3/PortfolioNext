@@ -33,6 +33,9 @@ export default function Waves(){
 
         window.addEventListener('mousemove', handleMouseMove);
 
+        const preloader = document.getElementById('preloader')
+        if(preloader) preloader.style.maxWidth = '0';
+
         return () => {
             window.removeEventListener(
                 'mousemove',
@@ -51,7 +54,6 @@ export default function Waves(){
             arr.push(v3.clone());
         }
         return [geometry, arr];
-
     }, [meshRef]);
 
     const getNoiseValue = (vector : THREE.Vector3, time: number) => {

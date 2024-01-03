@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         'primary': '#efefef',
         'muted': '#8b8b8b',
+        'white': '#efefef'
       },
       maxWidth: {
         'xxs': '5.5rem'
