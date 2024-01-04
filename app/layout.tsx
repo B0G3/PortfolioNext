@@ -14,8 +14,10 @@ export const metadata = {
   title: `Portfolio - B0G3`,
   description: `Marcin Kostrzemski aka B0G3 portfolio`, 
   icons: {
-    icon: '/icon.png'
+    icon: "/favicon.png",
+    type: "image/png",
   },
+  shortcut: { url: "/favicon.png", type: "image/png" },
 }
 
 export default function RootLayout({
@@ -26,7 +28,6 @@ export default function RootLayout({
   return (
     <html className={vt323.className} lang="en">
       <body>
-        <link rel="icon" href="/favicon.png" sizes="any" />
         <Waves></Waves>
         <Sidebar></Sidebar>
         <div className='w-full h-full text-primary uppercase snap-container'>
